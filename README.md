@@ -19,4 +19,4 @@ Astar Notes contains the most awesome A levels notes compiled over generations o
 
 ## Questions?
 
-- [WhatsApp me by clicking this link](https//wa.me/6582186566) 👈
+- [WhatsApp me by clicking this link](https://wa.me/6582186566) 👈
