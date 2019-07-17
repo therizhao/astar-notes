@@ -44,7 +44,7 @@
         <meta name="lang:{{ key }}" content="{{ lang.t(key) }}">
       {% endfor %}
       <link rel="shortcut icon" href="{{ config.theme.favicon | url }}">
-      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-4.4.0">
+      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, astar-notes-0.0.1">
     {% endblock %}
     {% block htmltitle %}
       {% if page and page.meta and page.meta.title %}
@@ -56,9 +56,9 @@
       {% endif %}
     {% endblock %}
     {% block styles %}
-      <link rel="stylesheet" href="{{ 'assets/stylesheets/application.4031d38b.css' | url }}">
+      <link rel="stylesheet" href="{{ 'assets/stylesheets/application.css' | url }}">
       {% if palette.primary or palette.accent %}
-        <link rel="stylesheet" href="{{ 'assets/stylesheets/application-palette.224b79ff.css' | url }}">
+        <link rel="stylesheet" href="{{ 'assets/stylesheets/application-palette.css' | url }}">
       {% endif %}
       {% if palette.primary %}
         {% import "partials/palette.html" as map %}
@@ -69,7 +69,7 @@
       {% endif %}
     {% endblock %}
     {% block libs %}
-      <script src="{{ 'assets/javascripts/modernizr.74668098.js' | url }}"></script>
+      <script src="{{ 'assets/javascripts/modernizr.js' | url }}"></script>
     {% endblock %}
     {% block fonts %}
       {% if font != false %}
@@ -106,11 +106,11 @@
       <defs>
         {% set platform = config.extra.repo_icon or config.repo_url %}
         {% if "github" in platform %}
-          {% include "assets/images/icons/github.f0b8504a.svg" %}
+          {% include "assets/images/icons/github.svg" %}
         {% elif "gitlab" in platform %}
-          {% include "assets/images/icons/gitlab.6dd19c00.svg" %}
+          {% include "assets/images/icons/gitlab.svg" %}
         {% elif "bitbucket" in platform %}
-          {% include "assets/images/icons/bitbucket.1b09e088.svg" %}
+          {% include "assets/images/icons/bitbucket.svg" %}
         {% endif %}
       </defs>
     </svg>
@@ -193,7 +193,7 @@
       {% endblock %}
     </div>
     {% block scripts %}
-      <script src="{{ 'assets/javascripts/application.ffb616e8.js' | url }}"></script>
+      <script src="{{ 'assets/javascripts/application.js' | url }}"></script>
       {% if lang.t("search.language") != "en" %}
         {% set languages = lang.t("search.language").split(",") %}
         {% if languages | length and languages[0] != "" %}
